@@ -16,6 +16,17 @@ public class HexTileSet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        createTileSet();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    private void createTileSet() 
+    {
         HexTile baseTile = new HexTile(new Vector2(0, 0), tileSize);
         baseTile.CreatePointyToppedHex();
 
@@ -35,20 +46,11 @@ public class HexTileSet : MonoBehaviour
                 float hexPosY = tileSize + j * (tileHeight * 3 / 4);
                 Vector2 center = new Vector2(hexPosX, hexPosY);
                 tileSet.Add(new Vector2(i * 2, j), new HexTile(center, tileSize));
+
+                GameObject gameObject = new GameObject();
+                gameObject.transform.parent = transform.parent;
+                gameObject.transform.position = new Vector3((hexPosX - mapHeight/2), 0, (hexPosY - mapWidth/2));
             }
         }
-
-        foreach (Vector2 vec in tileSet.Keys) {
-            HexTile tile;
-            if (tileSet.TryGetValue(vec, out tile)) {
-                Debug.Log(vec + ": " + tile.center);
-            }
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
