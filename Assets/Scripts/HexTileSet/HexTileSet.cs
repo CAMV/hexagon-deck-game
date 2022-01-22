@@ -16,7 +16,7 @@ public class HexTileSet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        createTileSet();
+        CreateTileSet();
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class HexTileSet : MonoBehaviour
 
     }
 
-    private void createTileSet() 
+    private void CreateTileSet()
     {
         HexTile baseTile = new HexTile(new Vector2(0, 0), tileSize);
         baseTile.CreatePointyToppedHex();
@@ -34,23 +34,34 @@ public class HexTileSet : MonoBehaviour
         Debug.Log(baseTile.height);
         float tileWidth = baseTile.width;
 
-        int maxRows = (int)((mapHeight*4/3) / tileHeight);
+        int maxRows = (int)((mapHeight * 4 / 3) / tileHeight);
         int maxCols = (int)(mapWidth / tileWidth);
 
         for (int i = 0; i < maxCols - 1; i++)
         {
             for (int j = 0; j < maxRows - 1; j++)
             {
-                float offsetX = tileWidth / 2 * ((j + 1) % 2);
-                float hexPosX = (i + 1) * tileWidth - offsetX;
-                float hexPosY = tileSize + j * (tileHeight * 3 / 4);
-                Vector2 center = new Vector2(hexPosX, hexPosY);
-                tileSet.Add(new Vector2(i * 2, j), new HexTile(center, tileSize));
-
-                GameObject gameObject = new GameObject();
-                gameObject.transform.parent = transform.parent;
-                gameObject.transform.position = new Vector3((hexPosX - mapHeight/2), 0, (hexPosY - mapWidth/2));
+                AddNewTile(tileWidth, i, tileHeight, j);
             }
         }
     }
+
+    private void AddNewTile(float tileWidth, int i, float tileHeight, int j)
+    {
+        float offsetX = tileWidth / 2 * ((j + 1) % 2);
+        float hexPosX = (i + 1) * tileWidth - offsetX;
+        float hexPosY = tileSize + j * (tileHeight * 3 / 4);
+        Vector2 center = new Vector2(hexPosX, hexPosY);
+        tileSet.Add(new Vector2(i * 2, j), new HexTile(center, tileSize));
+
+        CreateNewTileObject(hexPosX, hexPosY);
+    }
+
+    private void CreateNewTileObject(float x, float z)
+    {
+        GameObject gameObject = new GameObject();
+        gameObject.transform.parent = transform;
+        gameObject.transform.position = new Vector3((x - mapHeight / 2), 0, (z - mapWidth / 2));
+    }
+
 }
