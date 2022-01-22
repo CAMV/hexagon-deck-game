@@ -1,0 +1,4494 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!114 &6620296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f5e16c1cc4824409a5dff4e203234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 1
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Y Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &19738853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cead2bb3239614943afeb1ff27db9d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _configurations:
+    _namedEntities: []
+    _indexOfMarkedEntity: -1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+    _viewData: {fileID: 0}
+--- !u!114 &29938119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206fda49a422ac04eabbe2ce872a8cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 0
+  _axis: 0
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: X Axis Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &34651669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f76cbc46a0e424bbdd1fc0371d48dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isEnabled: 0
+  _alignmentAxis: 2
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Surface Alignment Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &35987105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f5e16c1cc4824409a5dff4e203234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 0
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: X Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &43529917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fa35add9de71e408f329d474da7cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cellSizeX: 0.25
+  _cellSizeZ: 0.2
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+    _xAxisName: X
+    _zAxisName: Z
+--- !u!114 &61033169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf59035a99b71a49ac17864b4c4bceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useSubdivision: 0
+  _subdivideAlongGrowDirection: 1
+  _subdivisionSizeAlongGrowDirection: 1
+  _subdivisionGapSizeAlongGrowDirection: 1
+  _subdivideAlongExtensionRight: 1
+  _subdivisionSizeAlongExtensionRight: 1
+  _subdivisionGapSizeAlongExtensionRight: 1
+  _subdivideAlongExtensionLook: 1
+  _subdivisionSizeAlongExtensionLook: 1
+  _subdivisionGapSizeAlongExtensionLook: 1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &62165964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a35308c1690984a8dada7163b5eb44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _alignToStroke: 0
+  _embedInSurfaceWhenNoAlign: 1
+  _randomizePrefabsInActiveCategory: 0
+  _useOriginalPivot: 0
+  _placementGuideSurfaceAlignmentSettings: {fileID: 1268781249}
+  _placementGuideRotationRandomizationSettings: {fileID: 1880885785}
+  _placementGuideScaleRandomizationSettings: {fileID: 842494591}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &64561510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e30b2095772eee41a570761ec3883f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _xAxisRotationSettings: {fileID: 1751957164}
+  _yAxisRotationSettings: {fileID: 586443141}
+  _zAxisRotationSettings: {fileID: 143568419}
+  _customAxisRotationSettings: {fileID: 552054771}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Keyboard Rotation Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &66617805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 2
+  _isVisible: 1
+  _color: {r: 0, g: 1, b: 0, a: 1}
+  _isInfinite: 0
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: PositiveUp Axis
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &80143820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1f515d4c75f724a91773d66448b0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activePivotPointRenderSettings: {fileID: 1804787285}
+  _inactivePivotPointRenderSettings: {fileID: 972114709}
+  _renderProjectionLines: 1
+  _projectionLineColor: {r: 1, g: 1, b: 1, a: 1}
+  _renderPivotPointConnectionLines: 1
+  _pivotPointConnectionLineColor: {r: 1, g: 1, b: 1, a: 1}
+  _wasInitialized: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Projected Guide Pivot Points
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &126603362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d04e599fddc1a42acf83f8e8cd8530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameFilter: 
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &141253453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6559a931f1fd93646beb431d6177afd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderSourceVertex: 1
+  _sourceVertexFillColor: {r: 0, g: 1, b: 0, a: 1}
+  _sourceVertexBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  _sourceVertexRadiusInPixels: 5
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Vertex Snapping
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &143568419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203a9fcbc10af6e4495db7c26401952f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 2
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Z Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &152699685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a870fd80c1ae0a42987b466421ba1ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mouseSensitivity: 0.02
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &157329311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25287e1cf357535468910990f22b46be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isVisible: 0
+  _axesRenderSettings:
+  - {fileID: 287708490}
+  - {fileID: 1698030684}
+  - {fileID: 1226950339}
+  - {fileID: 1173474749}
+  - {fileID: 1722960554}
+  - {fileID: 648102712}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+  _wasInitialized: 1
+--- !u!114 &161194031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92d3f475b5a3c942a7a7e8ebbdc035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tileConnectionType: 4
+  _prefab:
+    _unityPrefab: {fileID: 0}
+    _initialWorldRotation: {x: 0, y: 0, z: 0, w: 0}
+    _initialWorldScale: {x: 0, y: 0, z: 0}
+    _instantiationSettings: {fileID: 0}
+    _activationSettings: {fileID: 0}
+    _tagAssociations: {fileID: 0}
+    _name: 
+    _offsetFromGridSurface: 0
+    _offsetFromObjectSurface: 0
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _yAxisRotation: 0
+  _yOffset: 0
+  _upwardsExtrusionAmount: 0
+  _downwardsExtrusionAmount: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &164803460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac0885ceaf0ae5488b9d87c0c6be363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shapeType: 0
+  _pivotPointSizeInPixels: 10
+  _projectedBoxFacePivotPointsRenderSettings: {fileID: 80143820}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Guide Pivot Points
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &169621287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e30b2095772eee41a570761ec3883f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _xAxisRotationSettings: {fileID: 2004664326}
+  _yAxisRotationSettings: {fileID: 481454520}
+  _zAxisRotationSettings: {fileID: 1647449221}
+  _customAxisRotationSettings: {fileID: 2111445466}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Keyboard Rotation Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &198452295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e30b2095772eee41a570761ec3883f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _xAxisRotationSettings: {fileID: 1986880883}
+  _yAxisRotationSettings: {fileID: 1555141822}
+  _zAxisRotationSettings: {fileID: 1733607040}
+  _customAxisRotationSettings: {fileID: 1090139919}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Keyboard Rotation Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &201355648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee18873c9c917ac4e9920928b50e3166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _planeColor: {r: 0.101, g: 1, b: 0.51, a: 0.4}
+  _planeBorderLineColor: {r: 0, g: 0, b: 0, a: 1}
+  _planeNormalLineLength: 1
+  _planeNormalLineColor: {r: 1, g: 1, b: 1, a: 1}
+  _planeScale: 1.8
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Extension Plane
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &262665747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c7c70f676e83f4788dda72f75e5421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mouseOffsetFromPlacementSurfaceSettings: {fileID: 152699685}
+  _keyboardRotationSettings: {fileID: 64561510}
+  _mouseRotationSettings: {fileID: 725954813}
+  _mouseUniformScaleSettings: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Placement Guide Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &264905921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3abd7b41ce4ec469d238b9769e6e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _borderLineColor: {r: 1, g: 0, b: 0, a: 1}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: 3D Mass Erase Circle
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+    _settings: {fileID: 264905921}
+--- !u!114 &287708490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 0
+  _isVisible: 1
+  _color: {r: 1, g: 0, b: 0, a: 1}
+  _isInfinite: 0
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Axis Render Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &295391189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e84df8f2619c899439525fd71760b275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sessionMirrorObject: {fileID: 0}
+  _sessionMirrorObjectTransform: {fileID: 0}
+  _mirror:
+    _planeNormal: {x: 1, y: 0, z: 0}
+    _planeDistanceFromOrigin: 0
+    _worldCenter: {x: 0, y: 0, z: 0}
+  _mirrorTransformMatrix:
+    _translation: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _isActive: 0
+  _alignToSurface: 0
+  _mirrorRotation: 1
+  _mirrorSpanningObjects: 1
+  _allowIntersectionForMirroredObjects: 1
+  _settings: {fileID: 1671108780}
+  _renderSettings: {fileID: 1238223000}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Mirroring
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &332878507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af535eb009bbef54a84d3c8ef0228497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useTileConnections: 0
+  _commonYAxisRotation: 0
+  _commonYOffset: 0
+  _commonUpwardsExtrusionAmount: 0
+  _commonDownwardsExtrusionAmount: 0
+  _prefabInheritTileConnectionType: 0
+  _tileConnectionTypeSettings:
+  - {fileID: 1308770394}
+  - {fileID: 449577460}
+  - {fileID: 1136284491}
+  - {fileID: 544274877}
+  - {fileID: 161194031}
+  - {fileID: 1304599997}
+  - {fileID: 1414987775}
+  _wasInitialized: 1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &344368047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206fda49a422ac04eabbe2ce872a8cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 0
+  _axis: 2
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Z Axis Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &400551695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4c717cef02c694c99cb2664580125a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _selectionShapeType: 0
+  _selectionMode: 0
+  _selectionUpdateMode: 1
+  _objectGroupSettings:
+    _attachToObjectGroup: 0
+    _destinationGroup: {fileID: 0}
+  _object2ObjectSnapSettings:
+    _snapEps: 0.5
+    _canHoverObjects: 1
+  _xRotationStep: 90
+  _yRotationStep: 90
+  _zRotationStep: 90
+  _rotateAroundSelectionCenter: 1
+  _allowPartialOverlap: 1
+  _paintModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Selection Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &449577460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92d3f475b5a3c942a7a7e8ebbdc035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tileConnectionType: 1
+  _prefab:
+    _unityPrefab: {fileID: 0}
+    _initialWorldRotation: {x: 0, y: 0, z: 0, w: 0}
+    _initialWorldScale: {x: 0, y: 0, z: 0}
+    _instantiationSettings: {fileID: 0}
+    _activationSettings: {fileID: 0}
+    _tagAssociations: {fileID: 0}
+    _name: 
+    _offsetFromGridSurface: 0
+    _offsetFromObjectSurface: 0
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _yAxisRotation: 0
+  _yOffset: 0
+  _upwardsExtrusionAmount: 0
+  _downwardsExtrusionAmount: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &475063797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76daf5336ef4822438ea586d6c10b849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabCategories:
+    _namedEntities:
+    - {fileID: 760119550}
+    - {fileID: 1847035148}
+    _indexOfMarkedEntity: 1
+--- !u!114 &481454520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203a9fcbc10af6e4495db7c26401952f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 1
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Y Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &497122469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcdaa73ec42f0246b37c6f1ca4c3b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderSettings: {fileID: 963388995}
+  _cellSizeSettings: {fileID: 2120038060}
+  _dimensionSettings:
+    _dimensionType: 0
+    _finiteDimensionSettings:
+      _xAxisCellIndexRange:
+        _min: 10
+        _max: 10
+      _zAxisCellIndexRange:
+        _min: 10
+        _max: 10
+  _renderableCoordinateSystem:
+    _localAxes:
+    - {x: 1, y: 0, z: 0}
+    - {x: -1, y: -0, z: -0}
+    - {x: 0, y: 1, z: 0}
+    - {x: -0, y: -1, z: -0}
+    - {x: 0, y: 0, z: 1}
+    - {x: -0, y: -0, z: -1}
+    _transformMatrix:
+      _translation: {x: 0, y: 0, z: 0}
+      _rotation: {x: 0, y: 0, z: 0, w: 1}
+      _scale: {x: 1, y: 1, z: 1}
+    _renderSettings: {fileID: 1467776073}
+--- !u!114 &501259709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3017ab1abd6be4fab1a7026f59183a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 0
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: Custom Axis Rotation Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &520647103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c73f4bf607a0e44a722a501520578e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mirror: {fileID: 2009075248}
+  _projectedGuidePivotPoints:
+    _pivotPointCollection:
+      _indexOfActivePoint: 0
+      _pivotPoints:
+      - {x: 4.5, y: 0, z: 4.5}
+      - {x: 4, y: 0, z: 4}
+      - {x: 5, y: 0, z: 4}
+      - {x: 5, y: 0, z: 5}
+      - {x: 4, y: 0, z: 5}
+    _unprojectedPivotPoints:
+    - {x: 4.5, y: 0, z: 4.5}
+    - {x: 4, y: 0, z: 4}
+    - {x: 5, y: 0, z: 4}
+    - {x: 5, y: 0, z: 5}
+    - {x: 4, y: 0, z: 5}
+    _area: 1
+  _guidePivotPointsRenderSettings: {fileID: 164803460}
+  _objectVertexSnapSessionRenderSettings: {fileID: 141253453}
+  _settings: {fileID: 1763239222}
+  _persistentObjectPlacementGuideData:
+    _lastUsedWorldPosition: {x: 4.5, y: 0.2, z: 4.5}
+  _pathObjectPlacement:
+    _objectPlacementPath:
+      _settings: {fileID: 1225896323}
+      _renderSettings: {fileID: 1409124815}
+      _extensionPlaneBoxFace: 3
+      _extensionPlane:
+        _renderSettings: {fileID: 757901885}
+  _blockObjectPlacement:
+    _objectPlacementBlock:
+      _settings: {fileID: 1011359071}
+      _renderSettings: {fileID: 1751486029}
+      _extensionPlane:
+        _renderSettings: {fileID: 201355648}
+      _extensionPlaneBoxFace: 3
+  _decorPaintObjectPlacement: {fileID: 1393292988}
+--- !u!114 &544274877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92d3f475b5a3c942a7a7e8ebbdc035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tileConnectionType: 3
+  _prefab:
+    _unityPrefab: {fileID: 0}
+    _initialWorldRotation: {x: 0, y: 0, z: 0, w: 0}
+    _initialWorldScale: {x: 0, y: 0, z: 0}
+    _instantiationSettings: {fileID: 0}
+    _activationSettings: {fileID: 0}
+    _tagAssociations: {fileID: 0}
+    _name: 
+    _offsetFromGridSurface: 0
+    _offsetFromObjectSurface: 0
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _yAxisRotation: 0
+  _yOffset: 0
+  _upwardsExtrusionAmount: 0
+  _downwardsExtrusionAmount: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &552054771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676011e92f24790499d46eb6f1554967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Placement Surface Normal Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &553658779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 4
+  _isVisible: 1
+  _color: {r: 0, g: 0, b: 1, a: 1}
+  _isInfinite: 1
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: PositiveLook Axis
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &553969857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6627c2890a5a014ca8ae406713835fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _edgeRenderMode: 1
+  _cornerEdgesRenderModeSettings:
+    _cornerEdgeLengthPercentage: 0.3
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: Custom Edge Length Settings
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 0
+  _edgeColor: {r: 1, g: 1, b: 1, a: 1}
+  _boxColor: {r: 0, g: 1, b: 0, a: 0.2}
+  _boxScale: 1.01
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &586443141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203a9fcbc10af6e4495db7c26401952f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 1
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Y Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &626124200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2138c61248890f438ed5269d794be58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destinationCategory: {fileID: 760119550}
+  _prefabName: 
+  _destinationFolder: 
+  _pivot: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Prefab Creation Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &635200567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdcec61f931c4a942bcfee428ef5808e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Hover Surface Normal Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &640652924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206fda49a422ac04eabbe2ce872a8cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 0
+  _axis: 1
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Y Axis Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &648102712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 5
+  _isVisible: 1
+  _color: {r: 0, g: 0, b: 1, a: 1}
+  _isInfinite: 0
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Axis Render Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &659681566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f5e16c1cc4824409a5dff4e203234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 2
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Z Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &673296907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdcec61f931c4a942bcfee428ef5808e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Hover Surface Normal Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &677160930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32fe9d0caab8c2e4bb666f013e67408d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _boxBorderLineColor: {r: 1, g: 1, b: 1, a: 1}
+  _dimensionsLabelRenderSettings: {fileID: 1636943698}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Block Construction
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &725954813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460759a15dabce346aaab1a2e0a42335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _xAxisRotationSettings: {fileID: 35987105}
+  _yAxisRotationSettings: {fileID: 6620296}
+  _zAxisRotationSettings: {fileID: 818047981}
+  _customAxisRotationSettings: {fileID: 2066700881}
+  _snapStepInDegrees: 45
+  _useSnapping: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Mouse Rotation Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &732950027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 513dff363f2818149a70e64b8f527d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _offsetAlongGrowDirection: 0
+  _excludeCorners: 0
+  _randomizePrefabs: 0
+  _rotateObjectsToFollowPath: 0
+  _objectMissChance: 0
+  _paddingSettings: {fileID: 1016423018}
+  _heightAdjustmentSettings: {fileID: 1553369692}
+  _borderSettings: {fileID: 1662702593}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Path Construction Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &749705731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206fda49a422ac04eabbe2ce872a8cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 0
+  _axis: 0
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: X Axis Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &757901885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee18873c9c917ac4e9920928b50e3166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _planeColor: {r: 0.101, g: 1, b: 0.51, a: 0.4}
+  _planeBorderLineColor: {r: 0, g: 0, b: 0, a: 1}
+  _planeNormalLineLength: 1
+  _planeNormalLineColor: {r: 1, g: 1, b: 1, a: 1}
+  _planeScale: 1.8
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Extension Plane
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &760119550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd021295a42bec74ca6fc410c5d2cc9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabs:
+    _namedEntities: []
+    _indexOfMarkedEntity: -1
+  _prefabFilter: {fileID: 871267574}
+  _pathFolderNames: []
+  _objectGroup: {fileID: 0}
+  _name: Default
+--- !u!114 &777709898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda58706d257b2844a7cbe53cd1775e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _areGizmosActive: 1
+  _activeGizmoType: 0
+  _gizmoTransformSpace: 0
+  _gizmoTransformPivotPoint: 1
+  _objectMoveGizmo: {fileID: 0}
+  _objectRotationGizmo: {fileID: 0}
+  _objectScaleGizmo: {fileID: 0}
+  _objectDuplicateGizmo: {fileID: 0}
+--- !u!114 &818047981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f5e16c1cc4824409a5dff4e203234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 2
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Z Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!21 &830863206
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Octave3D/XZGrid
+  m_Shader: {fileID: 4800000, guid: 06932e1e9899b5e429681a49da9c80cd, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _CamFarPlaneDist: 1445.683
+    - _CellSizeX: 1
+    - _CellSizeZ: 1
+    m_Colors:
+    - _CamWorldPos: {r: 3.6084862, g: 0.7400176, b: -0.7020917, a: 0}
+    - _CellOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _LineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _PlaneColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &842494591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81be136b17549641a44e3d904017277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomizeScale: 0
+  _uniformScaleRandomizationSettings: {fileID: 0}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Scale Randomization Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &848239868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502ebb36fe2d9814b896b48f81397d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heightAdjustmentMode: 0
+  _manualHeightAdjustmentSettings: {fileID: 2120358403}
+  _automaticRandomHeightAdjustmentSettings: {fileID: 1910630862}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &858775377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff1ca95cd0235e4191088cb1414547b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _desiredCellSize: 0.2
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Surface Grid Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &871267574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01799e4e86677440b5bcdffee99a01c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameFilter: {fileID: 126603362}
+  _prefabTagFilterMode: 2
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &901066795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a274b325799393741a4ed12266468e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomizeRotation: 0
+  _customAxisRandomizationSettings: {fileID: 501259709}
+  _xAxisRandomizationSettings: {fileID: 29938119}
+  _yAxisRandomizationSettings: {fileID: 640652924}
+  _zAxisRandomizationSettings: {fileID: 1525799576}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Rotation Randomization Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &918321410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f5e16c1cc4824409a5dff4e203234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 1
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Y Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &935525579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209b67107a49290408f4042217a45a36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _selectionAssignmentLayer: 0
+  _destObjectGroupName: 
+--- !u!114 &936222912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01799e4e86677440b5bcdffee99a01c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameFilter: {fileID: 1674464549}
+  _prefabTagFilterMode: 2
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &936525130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 3
+  _isVisible: 1
+  _color: {r: 0, g: 1, b: 0, a: 1}
+  _isInfinite: 0
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: NegativeUp Axis
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &940454234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c645bc7eee79724ea64d0c5b0c87e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layerMask: 0
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Layer Decor Paint Mask
+    _visibilityToggleIndent: 1
+    _indentContent: 0
+    _surroundWithBox: 0
+    _viewData: {fileID: 0}
+--- !u!114 &963388995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4321ef99bb910344911956e83a59665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isVisible: 1
+  _cellLineColor: {r: 0, g: 0, b: 0, a: 1}
+  _cellLineThickness: 0.03
+  _planeColor: {r: 1, g: 1, b: 1, a: 0}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: XZ Grid
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &972114709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e91c25fe96efd44595db4ffc43c085b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isVisible: 1
+  _fillColor: {r: 1, g: 1, b: 1, a: 1}
+  _borderLineColor: {r: 0, g: 0, b: 0, a: 1}
+  _scale: 1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Inactive Pivot Point
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &979704171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3027c0a291ecb08448b567dfa03f984c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _settings: {fileID: 993172368}
+  _eraseMask:
+    _objectLayerObjectMask: {fileID: 1694521309}
+    _objectCollectionMask: {fileID: 2000463376}
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _mass2DEraseShape:
+    _circleShape:
+      _renderSettings: {fileID: 2060951726}
+  _mass3DEraseShape:
+    _circleShape:
+      _renderSettings: {fileID: 264905921}
+  _wasInitialized: 1
+--- !u!1 &984276899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 984276902}
+  - component: {fileID: 984276901}
+  - component: {fileID: 984276900}
+  m_Layer: 0
+  m_Name: World
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &984276900
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984276899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd15cbbeb80414648bab7c15830b8255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allWindows:
+  - {fileID: 0}
+  _prefabManagementWindow: {fileID: 0}
+  _objectPlacementSettingsWindow: {fileID: 0}
+  _prefabsToCategoryDropSettingsWindow: {fileID: 0}
+  _prefabTagsWindow: {fileID: 0}
+  _objectLayersWindow: {fileID: 0}
+  _selectionGrabSettingsWindow: {fileID: 0}
+  _octave3DConfigSaveWindow: {fileID: 0}
+  _octave3DConfigLoadWindow: {fileID: 0}
+  _decorPaintBrushViewLookAndFeelWindow: {fileID: 0}
+  _activePrefabCategoryView:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Active Prefab Category View
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+    _viewData: {fileID: 1098193076}
+    _prefabScrollView:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 0
+      _viewData: {fileID: 1594719106}
+  _activePrefabView:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Active Prefab View
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &984276901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984276899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c28772ec13a3f4d9acba5c5525e400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 984276902}
+  _showGUIHints: 0
+  _octave3DScene: {}
+  _prefabPreviewGenerator:
+    _renderCamera: {fileID: 0}
+    _previewLights:
+    - {fileID: 0}
+  _editorWindowPool: {fileID: 984276900}
+  _prefabCategoryDatabase: {fileID: 475063797}
+  _objectLayerDatabase: {fileID: 0}
+  _prefabTagDatabase: {fileID: 1639361584}
+  _objectPlacementPathHeightPatternDatabase: {fileID: 0}
+  _objectPlacementPathTileConnectionConfigurationDatabase: {fileID: 19738853}
+  _decorPaintObjectPlacementBrushDatabase: {fileID: 1232200112}
+  _placementObjectGroupDatabase: {fileID: 1627403663}
+  _objectPlacement: {fileID: 520647103}
+  _objectSnapping: {fileID: 2091355784}
+  _objectEraser: {fileID: 979704171}
+  _objectSelection: {fileID: 1997221641}
+  _prefabsToCategoryDropEventHandler:
+    _prefabsDropSettings: {fileID: 0}
+    _prefabFoldersDropSettings: {fileID: 1069665154}
+  _prefabsToPathTileConnectionDropEventHandler:
+    _dropSettings: {fileID: 0}
+  _inspector: {fileID: 1859311775}
+  _meshCombineSettings: {fileID: 0}
+  _shaderPool:
+    _gridShader: {fileID: 4800000, guid: 06932e1e9899b5e429681a49da9c80cd, type: 3}
+  _materialPool:
+    _xzGridMaterial: {fileID: 830863206}
+--- !u!4 &984276902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984276899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &993172368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c443d71bb9f41141bffd8fd5c22f5f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eraseMode: 0
+  _allowUndoRedo: 1
+  _eraseDelayInSeconds: 0.01
+  _eraseOnlyMeshObjects: 1
+  _mass2DEraseSettings: {fileID: 0}
+  _mass3DEraseSettings: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Eraser Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &1011359071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe97264e119be8419e679456f1723df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _manualConstructionSettings: {fileID: 2015095677}
+  _blockProjectionSettings:
+    _projectOnSurface: 0
+    _rejectNonProjectables: 1
+    _projectionDirection: 0
+    _canProjectOnTerrain: 1
+    _canProjectOnMesh: 1
+    _alignToSurfaceNormal: 1
+    _alignmentAxis: 2
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1016423018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f4cce5641d96c4db787402fe959c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _paddingAlongGrowDirection: 0
+  _paddingAlongExtensionPlane: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1025582001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6c9bea9f1e9134e871f58b0f742011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _boxBorderLineColor: {r: 1, g: 1, b: 1, a: 1}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Path Construction
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1066562360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f6181e9e31c7745b35a4dc2be91777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjects:
+    _serializedList: []
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Snap Mask
+    _visibilityToggleIndent: 1
+    _indentContent: 0
+    _surroundWithBox: 0
+    _viewData: {fileID: 0}
+--- !u!114 &1069665154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0872e6bdab3d2941b9cd730be5861d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _createPrefabCategoriesFromDroppedFolders: 1
+  _activateLastCreatedCategory: 1
+  _tagNamesForDroppedPrefabFolders: []
+  _createPrefabTagsForEachDroppedFolder: 1
+  _processSubfolders: 1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Prefab Folders Drop Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+    _tagSelectionForDroppedPrefabFolders:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 1
+      _visibilityToggleLabel: Tags For Dropped Prefab Folders
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 0
+      _viewData: {fileID: 0}
+    _prefabTagFilterForTagSelection: {fileID: 0}
+--- !u!114 &1090139919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676011e92f24790499d46eb6f1554967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Hover Surface Normal Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1093794266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81be136b17549641a44e3d904017277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomizeScale: 0
+  _uniformScaleRandomizationSettings: {fileID: 0}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Scale Randomization Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1098193076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f477354b3ea8744a35346f563a50eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showPrefabCategoryFolderNames: 0
+  _showHints: 1
+  _maxNumberOfCategoryFolderNames: 10
+  _nameForNewPrefabCategory: 
+  _prefabMoveType: 0
+  _destinationCategoryForPrefabMove: {fileID: 760119550}
+  _prefabOffsetFromGridSurface: 0
+  _prefabOffsetFromObjectSurface: 0
+  _prefabConfigLoadDir: 
+  _prefabConfigSaveDir: 
+--- !u!114 &1133526823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f76cbc46a0e424bbdd1fc0371d48dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isEnabled: 0
+  _alignmentAxis: 2
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Surface Alignment Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1136284491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92d3f475b5a3c942a7a7e8ebbdc035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tileConnectionType: 2
+  _prefab:
+    _unityPrefab: {fileID: 0}
+    _initialWorldRotation: {x: 0, y: 0, z: 0, w: 0}
+    _initialWorldScale: {x: 0, y: 0, z: 0}
+    _instantiationSettings: {fileID: 0}
+    _activationSettings: {fileID: 0}
+    _tagAssociations: {fileID: 0}
+    _name: 
+    _offsetFromGridSurface: 0
+    _offsetFromObjectSurface: 0
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _yAxisRotation: 0
+  _yOffset: 0
+  _upwardsExtrusionAmount: 0
+  _downwardsExtrusionAmount: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1142191852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f5e16c1cc4824409a5dff4e203234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 0
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: X Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1142648193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7472048310a0c764bade90fa77a7ffcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mirrorPlaneColor: {r: 1, g: 1, b: 0, a: 0.7}
+  _mirrorPlaneBorderLineColor: {r: 0, g: 0, b: 0, a: 1}
+  _mirrorWidth: 10
+  _mirrorHeight: 10
+  _useInfiniteWidth: 0
+  _useInfiniteHeight: 0
+  _mirroredBoxColor: {r: 1, g: 1, b: 0, a: 0.7}
+  _mirroredBoxBorderLineColor: {r: 0, g: 0, b: 0, a: 1}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Look and feel
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1173474749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 3
+  _isVisible: 1
+  _color: {r: 0, g: 1, b: 0, a: 1}
+  _isInfinite: 0
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Axis Render Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1180043027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c8ee59568d4f145aa5efa2dd1d39fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomizePrefabsInActiveCategory: 0
+  _placementGuideSurfaceAlignmentSettings: {fileID: 1133526823}
+  _placementGuideRotationRandomizationSettings: {fileID: 2117476263}
+  _placementGuideScaleRandomizationSettings: {fileID: 1093794266}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1188220161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3017ab1abd6be4fab1a7026f59183a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 1
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Placement Surface Normal Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!1 &1193371650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1193371652}
+  - component: {fileID: 1193371651}
+  - component: {fileID: 1193371653}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1193371651
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193371650}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1193371652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193371650}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1193371653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193371650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &1225896323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086ec9378ad00094e92c11acde932c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _manualConstructionSettings: {fileID: 732950027}
+  _tileConnectionSettings: {fileID: 332878507}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+    _activeObjectPlacementPathTileConnectionConfigurationView:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 0
+--- !u!114 &1226950339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 2
+  _isVisible: 1
+  _color: {r: 0, g: 1, b: 0, a: 1}
+  _isInfinite: 0
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Axis Render Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1232200112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a6085ad5d5a5a34b998d2ecd70994b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _brushes:
+    _namedEntities: []
+    _indexOfMarkedEntity: -1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Decor Paint Brushes
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+    _viewData: {fileID: 0}
+--- !u!114 &1238223000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7472048310a0c764bade90fa77a7ffcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mirrorPlaneColor: {r: 1, g: 1, b: 0, a: 0.7}
+  _mirrorPlaneBorderLineColor: {r: 0, g: 0, b: 0, a: 1}
+  _mirrorWidth: 10
+  _mirrorHeight: 10
+  _useInfiniteWidth: 0
+  _useInfiniteHeight: 0
+  _mirroredBoxColor: {r: 1, g: 1, b: 0, a: 0.7}
+  _mirroredBoxBorderLineColor: {r: 0, g: 0, b: 0, a: 1}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Look and feel
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1268781249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f76cbc46a0e424bbdd1fc0371d48dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isEnabled: 1
+  _alignmentAxis: 2
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Surface Alignment Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1304599997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92d3f475b5a3c942a7a7e8ebbdc035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tileConnectionType: 5
+  _prefab:
+    _unityPrefab: {fileID: 0}
+    _initialWorldRotation: {x: 0, y: 0, z: 0, w: 0}
+    _initialWorldScale: {x: 0, y: 0, z: 0}
+    _instantiationSettings: {fileID: 0}
+    _activationSettings: {fileID: 0}
+    _tagAssociations: {fileID: 0}
+    _name: 
+    _offsetFromGridSurface: 0
+    _offsetFromObjectSurface: 0
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _yAxisRotation: 0
+  _yOffset: 0
+  _upwardsExtrusionAmount: 0
+  _downwardsExtrusionAmount: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1308770394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92d3f475b5a3c942a7a7e8ebbdc035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tileConnectionType: 0
+  _prefab:
+    _unityPrefab: {fileID: 0}
+    _initialWorldRotation: {x: 0, y: 0, z: 0, w: 0}
+    _initialWorldScale: {x: 0, y: 0, z: 0}
+    _instantiationSettings: {fileID: 0}
+    _activationSettings: {fileID: 0}
+    _tagAssociations: {fileID: 0}
+    _name: 
+    _offsetFromGridSurface: 0
+    _offsetFromObjectSurface: 0
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _yAxisRotation: 0
+  _yOffset: 0
+  _upwardsExtrusionAmount: 0
+  _downwardsExtrusionAmount: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1360077813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d46d8b56cc5d7c4a8d8cbefcc7fb7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isVisible: 1
+  _projectionSurface: {fileID: 0}
+  _projectionDirection: 0
+--- !u!114 &1393292988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97de168e54a97a24898fa53c624361ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _singleModeDecorPaintStroke:
+    _strokeSurface:
+      _isValid: 1
+      _mouseCursorPickPoint: {x: 7.156205, y: 0, z: -2.1174383}
+      _normal: {x: 0, y: 1, z: 0}
+      _type: 3
+      _surfaceObject: {fileID: 0}
+  _brushModeDecorPaintStroke:
+    _strokeSurface:
+      _isValid: 0
+      _mouseCursorPickPoint: {x: 0, y: 0, z: 0}
+      _normal: {x: 0, y: 0, z: 0}
+      _type: 0
+      _surfaceObject: {fileID: 0}
+    _brushCircle:
+      _circleShape:
+        _renderSettings: {fileID: 1683438189}
+  _decorPaintMask:
+    _objectLayerObjectMask: {fileID: 940454234}
+    _objectCollectionMask: {fileID: 1964420606}
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _wasInitialized: 1
+--- !u!114 &1394308142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d87c04fb8a95cf47b3f79f4044ddcf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _decorPaintMode: 0
+  _ignoreGrid: 1
+  _strokeDistance: 1
+  _singleDecorPaintModeSettings: {fileID: 62165964}
+  _brushDecorPaintModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1409124815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1965f34319afd414d91351768d42b9eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _manualConstructionRenderSettings: {fileID: 1025582001}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1414987775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92d3f475b5a3c942a7a7e8ebbdc035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tileConnectionType: 6
+  _prefab:
+    _unityPrefab: {fileID: 0}
+    _initialWorldRotation: {x: 0, y: 0, z: 0, w: 0}
+    _initialWorldScale: {x: 0, y: 0, z: 0}
+    _instantiationSettings: {fileID: 0}
+    _activationSettings: {fileID: 0}
+    _tagAssociations: {fileID: 0}
+    _name: 
+    _offsetFromGridSurface: 0
+    _offsetFromObjectSurface: 0
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _yAxisRotation: 0
+  _yOffset: 0
+  _upwardsExtrusionAmount: 0
+  _downwardsExtrusionAmount: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1446304318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa3b2b97ede62744aca3925030597d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _borderLineColor: {r: 0, g: 1, b: 0, a: 1}
+  _fillColor: {r: 0, g: 1, b: 0, a: 0.2}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Ellipse Selection Shape
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1452165387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206fda49a422ac04eabbe2ce872a8cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 0
+  _axis: 0
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: X Axis Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1467776073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25287e1cf357535468910990f22b46be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isVisible: 1
+  _axesRenderSettings:
+  - {fileID: 1480812675}
+  - {fileID: 2016402156}
+  - {fileID: 66617805}
+  - {fileID: 936525130}
+  - {fileID: 553658779}
+  - {fileID: 1985068969}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: XZ Grid Coord System
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+  _wasInitialized: 1
+--- !u!114 &1480812675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 0
+  _isVisible: 1
+  _color: {r: 1, g: 0, b: 0, a: 1}
+  _isInfinite: 1
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: PositiveRight Axis
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1491950127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272817884a001ac4cb1be5c45f7b10f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _boxRenderModeSettings: {fileID: 553969857}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Selection Rendering
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1514476538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460759a15dabce346aaab1a2e0a42335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _xAxisRotationSettings: {fileID: 1142191852}
+  _yAxisRotationSettings: {fileID: 918321410}
+  _zAxisRotationSettings: {fileID: 659681566}
+  _customAxisRotationSettings: {fileID: 673296907}
+  _snapStepInDegrees: 45
+  _useSnapping: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Mouse Rotation Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1517403894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4321ef99bb910344911956e83a59665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isVisible: 1
+  _cellLineColor: {r: 0, g: 0, b: 0, a: 1}
+  _cellLineThickness: 0.05
+  _planeColor: {r: 0.3254, g: 1, b: 0.2, a: 0.3019}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Collider Snap Surface Grid
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1525799576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206fda49a422ac04eabbe2ce872a8cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 0
+  _axis: 2
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Z Axis Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1553369692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a4d0d6f1e8b7441afe6d7e860754c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heightAdjustmentMode: 0
+  _manualHeightAdjustmentSettings: {fileID: 1746798292}
+  _automaticRandomHeightAdjustmentSettings: {fileID: 0}
+  _automaticPatternHeightAdjustmentSettings: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1555141822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203a9fcbc10af6e4495db7c26401952f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 1
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Y Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1582050973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509ead723dbc70b4dbe1ec42a9a03a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _placementGuideSurfaceAlignmentSettings: {fileID: 1884504375}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1594719106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a90c78bb4ba29045a8fbf8504710886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabScrollPosition: {x: 0, y: 0}
+  _numberOfPrefabsPerRow: 7
+  _prefabPreviewScale: 0.5
+  _prefabScrollViewHeight: 200
+  _activePrefabTint: {r: 0.639, g: 0.909, b: 1, a: 1}
+  _showPrefabNames: 0
+  _prefabNameLabelColor: {r: 0, g: 0, b: 0, a: 1}
+  _lookAndFeelWindow: {fileID: 0}
+--- !u!114 &1596156954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206fda49a422ac04eabbe2ce872a8cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 0
+  _axis: 1
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Y Axis Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1627403663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024e8dac06b81724f9ef69a50e81017b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectGroups:
+    _namedEntities: []
+    _indexOfMarkedEntity: -1
+  _preserveGroupChildren: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Groups
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+    _viewData: {fileID: 0}
+--- !u!114 &1636943698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137ddbdd6a81e1c44b995451c706f982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textColor: {r: 1, g: 1, b: 1, a: 1}
+  _bold: 1
+  _fontSize: 15
+--- !u!114 &1639361584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbefee176837eed4b8ffbb3c96bdc843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabTags:
+    _namedEntities:
+    - {fileID: 2030448244}
+  _prefabTagFilter: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Prefab Tags
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+    _viewData: {fileID: 0}
+--- !u!114 &1646153907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206fda49a422ac04eabbe2ce872a8cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 0
+  _axis: 1
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Y Axis Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1646945046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3017ab1abd6be4fab1a7026f59183a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 1
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Placement Surface Normal Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1647449221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203a9fcbc10af6e4495db7c26401952f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 2
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Z Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1662702593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f20503566965360469066c9fb8140783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useBorders: 0
+  _beginBorderWidth: 1
+  _endBorderWidth: 1
+  _bottomBorderWidth: 1
+  _topBorderWidth: 1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1671108780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f976107688c6e84d9bbe8b66b3f6908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mouseOffsetFromHoverSurfaceSettings: {fileID: 0}
+  _mouseRotationSettings: {fileID: 1740535550}
+  _keyboardRotationSettings: {fileID: 198452295}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: More settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1674464549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d04e599fddc1a42acf83f8e8cd8530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameFilter: 
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!1 &1675582814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1675582817}
+  - component: {fileID: 1675582816}
+  - component: {fileID: 1675582815}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1675582815
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675582814}
+  m_Enabled: 1
+--- !u!20 &1675582816
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675582814}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1675582817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675582814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1683438189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3abd7b41ce4ec469d238b9769e6e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _borderLineColor: {r: 0, g: 1, b: 0, a: 1}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Brush Circle
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+    _settings: {fileID: 1683438189}
+--- !u!114 &1694521309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c645bc7eee79724ea64d0c5b0c87e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layerMask: 0
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Layer Erase Mask
+    _visibilityToggleIndent: 1
+    _indentContent: 0
+    _surroundWithBox: 0
+    _viewData: {fileID: 0}
+--- !u!114 &1698030684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 1
+  _isVisible: 1
+  _color: {r: 1, g: 0, b: 0, a: 1}
+  _isInfinite: 0
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Axis Render Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1722960554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 4
+  _isVisible: 1
+  _color: {r: 0, g: 0, b: 1, a: 1}
+  _isInfinite: 0
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Axis Render Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1728979676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d64e6a8d0bef0045bdf06eb005a4d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _paddingAlongGrowDirection: 0
+  _paddingAlongExtensionPlane: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1733607040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203a9fcbc10af6e4495db7c26401952f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 2
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Z Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1740535550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460759a15dabce346aaab1a2e0a42335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _xAxisRotationSettings: {fileID: 2094933787}
+  _yAxisRotationSettings: {fileID: 1749263723}
+  _zAxisRotationSettings: {fileID: 1972895830}
+  _customAxisRotationSettings: {fileID: 635200567}
+  _snapStepInDegrees: 45
+  _useSnapping: 0
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Mouse Rotation Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1746798292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b1006bc5ce86a45aa75e8be3db470e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _raiseAmount: 1
+  _lowerAmount: 1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1749263723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f5e16c1cc4824409a5dff4e203234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 1
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Y Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1751486029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eade455f54b6b41a4885dd65aef0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _manualConstructionRenderSettings: {fileID: 677160930}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1751957164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203a9fcbc10af6e4495db7c26401952f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 0
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: X Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1763239222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9264a4dc20495f5478f97929ece7cb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hideWireframeWhenPlacingObjects: 1
+  _inheritRotationOnPrefabScroll: 0
+  _spawnInPrefabLayer: 1
+  _customSpawnLayer: 0
+  _attachPlacedObjectsToObjectGroup: 0
+  _useActivePrefabCategoryGroup: 0
+  _objectPlacementMode: 1
+  _makePlacedObjectsChildrenOfHoveredObject: 0
+  _objectIntersectionSettings: {fileID: 1978207333}
+  _objectPlacementGuideSettings: {fileID: 262665747}
+  _decorPaintObjectPlacementSettings: {fileID: 1394308142}
+  _pointAndClickPlacementSettings: {fileID: 1180043027}
+  _pathPlacementSettings: {fileID: 1582050973}
+  _blockObjectPlacementSettings: {fileID: 2024395605}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Placement Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+    _objectPlacementModeSelectionToolbar:
+      _normalStateButtonTexturePaths:
+      - /Textures/GUI Textures/Object Placement Mode Selection Buttons/DecorPaintMode
+      - /Textures/GUI Textures/Object Placement Mode Selection Buttons/PointAndClickMode
+      - /Textures/GUI Textures/Object Placement Mode Selection Buttons/PathMode
+      - /Textures/GUI Textures/Object Placement Mode Selection Buttons/BlockMode
+      _activeStateButtonTexturePaths: []
+      _buttonTooltips:
+      - Decor Paint
+      - Point and Click
+      - Path
+      - Block
+      _buttonScale: 0.25
+      _allowActiveStateForButtons: 1
+      _useBoxStyleForButtons: 1
+--- !u!114 &1804787285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e91c25fe96efd44595db4ffc43c085b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isVisible: 1
+  _fillColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  _borderLineColor: {r: 0, g: 0, b: 0, a: 1}
+  _scale: 1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Active Pivot Point
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1806283353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e73747981bc4943a73d04642202a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useOriginalPivot: 0
+  _enableObjectSurfaceGrid: 1
+  _snapToCursorHitPoint: 0
+  _snapCenterToCenterForXZGrid: 0
+  _snapCenterToCenterForObjectSurface: 0
+  _enableObjectToObjectSnap: 0
+  _objectToObjectSnapEpsilon: 0.5
+  _xzGridYOffsetStep: 1
+  _objectColliderSnapSurfaceGridSettings: {fileID: 858775377}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Snap Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &1847035148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd021295a42bec74ca6fc410c5d2cc9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefabs:
+    _namedEntities: []
+    _indexOfMarkedEntity: -1
+  _prefabFilter: {fileID: 936222912}
+  _pathFolderNames:
+  - Assets
+  - Prefabs
+  - Floors
+  _objectGroup: {fileID: 0}
+  _name: Floors
+--- !u!114 &1857665834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcdaa73ec42f0246b37c6f1ca4c3b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderSettings: {fileID: 1517403894}
+  _cellSizeSettings: {fileID: 43529917}
+  _dimensionSettings:
+    _dimensionType: 1
+    _finiteDimensionSettings:
+      _xAxisCellIndexRange:
+        _min: -1
+        _max: 2
+      _zAxisCellIndexRange:
+        _min: 0
+        _max: 0
+  _renderableCoordinateSystem:
+    _localAxes:
+    - {x: 0, y: 0, z: 1}
+    - {x: -0, y: -0, z: -1}
+    - {x: 1, y: 0, z: 0}
+    - {x: -1, y: -0, z: -0}
+    - {x: 0, y: 1, z: 0}
+    - {x: -0, y: -1, z: -0}
+    _transformMatrix:
+      _translation: {x: 1, y: -0.000000007450581, z: 1.25}
+      _rotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
+      _scale: {x: 1, y: 1, z: 1}
+    _renderSettings: {fileID: 157329311}
+--- !u!114 &1859311775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 825730de71c090d468695041ac26994a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _editorWindow: {fileID: 0}
+  _activeInspectorGUIIdentifier: 0
+  _inpectorGUISelectionTolbar:
+    _normalStateButtonTexturePaths:
+    - /Textures/GUI Textures/Inspector GUI Selection Buttons/ObjectPlacementGUIButton
+    - /Textures/GUI Textures/Inspector GUI Selection Buttons/ObjectSelectionGUIButton
+    - /Textures/GUI Textures/Inspector GUI Selection Buttons/ObjectEraseGUIButton
+    - /Textures/GUI Textures/Inspector GUI Selection Buttons/ObjectSnappingGUIButton
+    _activeStateButtonTexturePaths: []
+    _buttonTooltips:
+    - Object Placement
+    - Object Selection
+    - Object Erase
+    - Object Snapping
+    _buttonScale: 0.25
+    _allowActiveStateForButtons: 1
+    _useBoxStyleForButtons: 1
+  _objectPlacementInspectorGUI:
+    _objectPlacementLookAndFeelSettingsView:
+      _isVisible: 0
+      _toggleVisibilityBeforeRender: 1
+      _visibilityToggleLabel: Look and Feel
+      _visibilityToggleIndent: 0
+      _indentContent: 1
+      _surroundWithBox: 1
+      _decorPaintLookAndFeelSettingsView:
+        _isVisible: 0
+        _toggleVisibilityBeforeRender: 1
+        _visibilityToggleLabel: Decor Paint
+        _visibilityToggleIndent: 0
+        _indentContent: 1
+        _surroundWithBox: 0
+      _pathObjectPlacementLookAndFeelSettingsView:
+        _isVisible: 0
+        _toggleVisibilityBeforeRender: 1
+        _visibilityToggleLabel: Path
+        _visibilityToggleIndent: 0
+        _indentContent: 1
+        _surroundWithBox: 0
+      _blockObjectPlacementLookAndFeelSettingsView:
+        _isVisible: 0
+        _toggleVisibilityBeforeRender: 1
+        _visibilityToggleLabel: Block
+        _visibilityToggleIndent: 0
+        _indentContent: 1
+        _surroundWithBox: 0
+  _objectEraseInspectorGUI:
+    _lookAndFeelSettingsView:
+      _isVisible: 0
+      _toggleVisibilityBeforeRender: 1
+      _visibilityToggleLabel: Look and Feel
+      _visibilityToggleIndent: 0
+      _indentContent: 1
+      _surroundWithBox: 1
+  _objectSnappingInspectorGUI:
+    _objectSnappingLookAndFeelSettingsView:
+      _isVisible: 0
+      _toggleVisibilityBeforeRender: 1
+      _visibilityToggleLabel: Look and Feel
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _objectSelectionInspectorGUI:
+    _objectSelectionTransformGizmoSelectionToolbar:
+      _normalStateButtonTexturePaths:
+      - /Textures/GUI Textures/Gizmo Activation Buttons/MoveGizmo
+      - /Textures/GUI Textures/Gizmo Activation Buttons/RotationGizmo
+      - /Textures/GUI Textures/Gizmo Activation Buttons/ScaleGizmo
+      - /Textures/GUI Textures/Gizmo Activation Buttons/ObjectExtrudeGizmo
+      _activeStateButtonTexturePaths: []
+      _buttonTooltips:
+      - Move Gizmo
+      - Rotation Gizmo
+      - Scale Gizmo
+      - Extrude Gizmo
+      _buttonScale: 0.08
+      _allowActiveStateForButtons: 1
+      _useBoxStyleForButtons: 1
+    _objectSelectionActionsToolbar:
+      _normalStateButtonTexturePaths:
+      - /Textures/GUI Textures/Object Selection Actions/DecorPaintMaskAssignment
+      - /Textures/GUI Textures/Object Selection Actions/DecorPaintMaskRemoval
+      - /Textures/GUI Textures/Object Selection Actions/SnapMaskAssignment
+      - /Textures/GUI Textures/Object Selection Actions/SnapMaskRemoval
+      - /Textures/GUI Textures/Object Selection Actions/EraseMaskAssignment
+      - /Textures/GUI Textures/Object Selection Actions/EraseMaskRemoval
+      _activeStateButtonTexturePaths: []
+      _buttonTooltips:
+      - Assign selection to decor paint mask
+      - Remove selection from decor paint mask
+      - Assign selection to snap mask
+      - Remove selection from snap mask
+      - Assign selection to erase mask
+      - Remove selection from erase mask
+      _buttonScale: 0.16
+      _allowActiveStateForButtons: 0
+      _useBoxStyleForButtons: 0
+    _objectSelectionActionsView:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 0
+      _viewData: {fileID: 935525579}
+    _lookAndFeelSettingsView:
+      _isVisible: 0
+      _toggleVisibilityBeforeRender: 1
+      _visibilityToggleLabel: Look and Feel
+      _visibilityToggleIndent: 0
+      _indentContent: 1
+      _surroundWithBox: 1
+--- !u!114 &1880885785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a274b325799393741a4ed12266468e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomizeRotation: 0
+  _customAxisRandomizationSettings: {fileID: 1188220161}
+  _xAxisRandomizationSettings: {fileID: 1452165387}
+  _yAxisRandomizationSettings: {fileID: 1596156954}
+  _zAxisRandomizationSettings: {fileID: 2024712752}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Rotation Randomization Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1884504375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f76cbc46a0e424bbdd1fc0371d48dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isEnabled: 0
+  _alignmentAxis: 2
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Surface Alignment Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1910630862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ca2132ad46b194d8a8120042397822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minHeight: -5
+  _maxHeight: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &1964420606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f6181e9e31c7745b35a4dc2be91777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjects:
+    _serializedList: []
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Decor Paint Mask
+    _visibilityToggleIndent: 1
+    _indentContent: 0
+    _surroundWithBox: 0
+    _viewData: {fileID: 0}
+--- !u!114 &1972895830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f5e16c1cc4824409a5dff4e203234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 2
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Z Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1978207333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f58d41e325bbb48b27167213ea7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allowIntersectionForDecorPaintSingleModeDrag: 1
+  _allowIntersectionForDecorPaintBrushModeDrag: 1
+  _allowIntersectionForPathPlacement: 1
+  _allowIntersectionForBlockPlacement: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Intersection
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1985068969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 5
+  _isVisible: 1
+  _color: {r: 0, g: 0, b: 1, a: 1}
+  _isInfinite: 1
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: NegativeLook Axis
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1986880883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203a9fcbc10af6e4495db7c26401952f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 0
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: X Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1991266455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c91b5bded6aede45a6f7d66e5823433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _borderLineColor: {r: 0, g: 1, b: 0, a: 1}
+  _fillColor: {r: 0, g: 1, b: 0, a: 0.2}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Rectangle Selection Shape
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &1997221641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c559296ed516ca946ac925c8876d6968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _selectedObjects:
+    _serializedList: []
+  _mirror: {fileID: 295391189}
+  _settings: {fileID: 400551695}
+  _prefabCreationSettings: {fileID: 626124200}
+  _objectOnSurfaceProjectSettings: {fileID: 1360077813}
+  _renderSettings: {fileID: 1491950127}
+  _selectionGrabSettings: {fileID: 0}
+  _duplicateGizmo: {fileID: 0}
+  _selectionShape:
+    _rectangleShape:
+      _renderSettings: {fileID: 1991266455}
+    _ellipseShape:
+      _renderSettings: {fileID: 1446304318}
+  _objectSelectionGizmos: {fileID: 777709898}
+  _firstSelectedGameObject: {fileID: 0}
+  _lastSelectedGameObject: {fileID: 0}
+  _objectVertexSnapSessionRenderSettings: {fileID: 0}
+  _wasInitialized: 1
+--- !u!114 &2000463376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f6181e9e31c7745b35a4dc2be91777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjects:
+    _serializedList: []
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Erase Mask
+    _visibilityToggleIndent: 1
+    _indentContent: 0
+    _surroundWithBox: 0
+    _viewData: {fileID: 0}
+--- !u!114 &2004664326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203a9fcbc10af6e4495db7c26401952f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 0
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: X Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &2004955124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f976107688c6e84d9bbe8b66b3f6908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mouseOffsetFromHoverSurfaceSettings: {fileID: 0}
+  _mouseRotationSettings: {fileID: 1514476538}
+  _keyboardRotationSettings: {fileID: 169621287}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: More settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &2009075248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e84df8f2619c899439525fd71760b275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sessionMirrorObject: {fileID: 0}
+  _sessionMirrorObjectTransform: {fileID: 0}
+  _mirror:
+    _planeNormal: {x: 1, y: 0, z: 0}
+    _planeDistanceFromOrigin: 0
+    _worldCenter: {x: 0, y: 0, z: 0}
+  _mirrorTransformMatrix:
+    _translation: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _isActive: 0
+  _alignToSurface: 0
+  _mirrorRotation: 1
+  _mirrorSpanningObjects: 1
+  _allowIntersectionForMirroredObjects: 1
+  _settings: {fileID: 2004955124}
+  _renderSettings: {fileID: 1142648193}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Mirroring
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &2015095677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ec861510fed784cadca7d0c1fe8ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constrainSize: 0
+  _maxSize: 30
+  _offsetAlongGrowDirection: 0
+  _excludeCorners: 0
+  _randomizePrefabs: 0
+  _objectMissChance: 0
+  _paddingSettings: {fileID: 1728979676}
+  _objectRotationRandomizationSettings: {fileID: 901066795}
+  _heightAdjustmentSettings: {fileID: 848239868}
+  _subdivisionSettings: {fileID: 61033169}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Block Construction Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 0
+    _surroundWithBox: 1
+--- !u!114 &2016402156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ccb8526f8bab4db6a5c2afd52e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis: 1
+  _isVisible: 1
+  _color: {r: 1, g: 0, b: 0, a: 1}
+  _isInfinite: 1
+  _finiteSize: 5
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: NegativeRight Axis
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &2024395605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ba0be14b50e6044ba4868fad7eaf9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _placementGuideSurfaceAlignmentSettings: {fileID: 34651669}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+--- !u!114 &2024712752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206fda49a422ac04eabbe2ce872a8cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomize: 0
+  _axis: 2
+  _randomizationModeSettings: {fileID: 0}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Z Axis Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &2030448244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29df0ea229b6804dbbbbc8eb786df73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Floors
+  _isActive: 1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
+    _allowTagNameChange: 0
+--- !u!114 &2060951726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa3b2b97ede62744aca3925030597d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _borderLineColor: {r: 1, g: 0, b: 0, a: 1}
+  _fillColor: {r: 1, g: 0, b: 0, a: 0.4}
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: 2D Mass Erase Circle
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &2066700881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdcec61f931c4a942bcfee428ef5808e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Placement Surface Normal Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &2091355784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5748d2ea0bd0a3840a930cdfaf5fc1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _settings: {fileID: 1806283353}
+  _objectSnapMask:
+    _objectLayerObjectMask: {fileID: 2094404409}
+    _objectCollectionMask: {fileID: 1066562360}
+    _view:
+      _isVisible: 1
+      _toggleVisibilityBeforeRender: 0
+      _visibilityToggleLabel: 
+      _visibilityToggleIndent: 0
+      _indentContent: 0
+      _surroundWithBox: 1
+  _xzSnapGrid: {fileID: 497122469}
+  _objectSnapSurface:
+    _isValid: 1
+    _objectBoxSnapSurfaceGrid:
+      _grid: {fileID: 1857665834}
+    _surfaceQuad:
+      _xzSize: {x: 1, y: 1}
+      _coordinateSystem:
+        _localAxes:
+        - {x: 1, y: 0, z: 0}
+        - {x: -1, y: -0, z: -0}
+        - {x: 0, y: 1, z: 0}
+        - {x: -0, y: -1, z: -0}
+        - {x: 0, y: 0, z: 1}
+        - {x: -0, y: -0, z: -1}
+        _transformMatrix:
+          _translation: {x: 4.5, y: 0, z: 4.5}
+          _rotation: {x: 0, y: 0, z: 0, w: 1}
+          _scale: {x: 1, y: 1, z: 1}
+    _mouseCursorPickPoint: {x: 4.2833986, y: 0.00000023841858, z: 4.47176}
+    _type: 1
+    _surfaceObject: {fileID: 0}
+  _wasInitialized: 1
+--- !u!114 &2094404409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c645bc7eee79724ea64d0c5b0c87e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layerMask: 0
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Object Layer Snap Mask
+    _visibilityToggleIndent: 1
+    _indentContent: 0
+    _surroundWithBox: 0
+    _viewData: {fileID: 0}
+--- !u!114 &2094933787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f5e16c1cc4824409a5dff4e203234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAxis: 0
+  _mouseSensitivity: 1
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: X Axis Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &2111445466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676011e92f24790499d46eb6f1554967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationAmountInDegrees: 90
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Hover Surface Normal Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &2117476263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a274b325799393741a4ed12266468e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomizeRotation: 0
+  _customAxisRandomizationSettings: {fileID: 1646945046}
+  _xAxisRandomizationSettings: {fileID: 749705731}
+  _yAxisRandomizationSettings: {fileID: 1646153907}
+  _zAxisRandomizationSettings: {fileID: 344368047}
+  _view:
+    _isVisible: 0
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: Rotation Randomization Settings
+    _visibilityToggleIndent: 1
+    _indentContent: 1
+    _surroundWithBox: 0
+--- !u!114 &2120038060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fa35add9de71e408f329d474da7cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cellSizeX: 1
+  _cellSizeZ: 1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 1
+    _visibilityToggleLabel: XZ Grid Cell Size Settings
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 1
+    _xAxisName: X
+    _zAxisName: Z
+--- !u!114 &2120358403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667afb373bf4f51448487de01a594f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _raiseAmount: 1
+  _lowerAmount: 1
+  _view:
+    _isVisible: 1
+    _toggleVisibilityBeforeRender: 0
+    _visibilityToggleLabel: 
+    _visibilityToggleIndent: 0
+    _indentContent: 0
+    _surroundWithBox: 0
