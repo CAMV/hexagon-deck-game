@@ -61,7 +61,7 @@ public class HexTileSet : MonoBehaviour
     {
         GameObject gameObject = new GameObject();
         gameObject.transform.parent = transform;
-        gameObject.transform.position = new Vector3((x - mapHeight / 2), 0, (z - mapWidth / 2));
+        gameObject.transform.localPosition = new Vector3((x - mapHeight / 2), 0, (z - mapWidth / 2));
     }
 
 }
