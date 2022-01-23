@@ -2,7 +2,7 @@
 using UnityEngine;
 
 
-public class CardsGameManager : ScriptableObject
+public class CardsGameManager : MonoBehaviour
 {
 
     private Deck _deck;
