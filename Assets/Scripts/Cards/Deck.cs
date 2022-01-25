@@ -77,7 +77,7 @@ public class Deck
                 indexToRemove = Random.Range(0, _cards.Count);
                 break;
         }
-
+        
         if (indexToRemove < 0)
             return null;
 
