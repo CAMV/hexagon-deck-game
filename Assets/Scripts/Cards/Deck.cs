@@ -44,6 +44,21 @@ public class Deck
         _cards.Add(cardToAdd);
     }
 
+    public Card PopCard(int cardIndex)
+    {
+        if (cardIndex < 0)
+            return null;
+
+        if (cardIndex >= _cards.Count)
+            return null;
+
+        var cardToReturn = _cards[_order[cardIndex]];
+        _cards.RemoveAt(_order[cardIndex]);
+        _order.RemoveAt(cardIndex);
+
+        return cardToReturn;
+    }
+
     public Card PopCard(DeckPosition deckPos)
     {
 
@@ -62,7 +77,7 @@ public class Deck
                 indexToRemove = Random.Range(0, _cards.Count);
                 break;
         }
-
+        
         if (indexToRemove < 0)
             return null;
 

@@ -2,12 +2,10 @@
 using UnityEngine;
 
 
-public class CardsGameManager : ScriptableObject
+public class CardsGameManager : MonoBehaviour
 {
-
     private Deck _deck;
     private Deck _graveyard;
     private Deck _exiled;
     private Deck _hand;
-
 }
