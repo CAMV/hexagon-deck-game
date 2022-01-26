@@ -9,13 +9,14 @@ public class HexTileSet : MonoBehaviour
     public int tileSize;
     public Vector2 tileCenter;
     private Dictionary<Vector2, HexTileNode> tileSet = new Dictionary<Vector2, HexTileNode>();
-
+    private HexTileGraph tileGraph;
 
 
     // Start is called before the first frame update
     void Start()
     {
         CreateTileSet();
+        tileGraph = new HexTileGraph(tileSet);
     }
 
     // Update is called once per frame
@@ -30,7 +31,6 @@ public class HexTileSet : MonoBehaviour
         baseTile.CreatePointyToppedHex();
 
         float tileHeight = baseTile.height;
-        Debug.Log(baseTile.height);
         float tileWidth = baseTile.width;
 
         int maxRows = (int)((mapHeight * 4 / 3) / tileHeight);
@@ -58,7 +58,7 @@ public class HexTileSet : MonoBehaviour
         Vector2 center = new Vector2(hexPosX, hexPosY);
 
         HexTile tile = new HexTile(center, tileSize);
-        Vector2 pos = new Vector2(i * 2, j);
+        Vector2 pos = new Vector2((i * 2) + j % 2, j);
         tile.pos = pos;
 
         tileSet.Add(pos, new HexTileNode(tile));
@@ -83,7 +83,8 @@ public class HexTileSet : MonoBehaviour
         foreach (Vector2 adj in hexAdjacents)
         {
             HexTileNode tile;
-            if (tileSet.TryGetValue(adj, out tile)) {
+            if (tileSet.TryGetValue(adj, out tile))
+            {
                 adjacentTiles.Add(tile);
             }
         }
@@ -91,7 +92,8 @@ public class HexTileSet : MonoBehaviour
         return adjacentTiles;
     }
 
-    public List<Vector2> GetHexAdjacents(Vector2 pos) {
+    public List<Vector2> GetHexAdjacents(Vector2 pos)
+    {
         List<Vector2> adjacents = new List<Vector2>();
 
         adjacents.Add(new Vector2(pos.x + 1, pos.y + 1));

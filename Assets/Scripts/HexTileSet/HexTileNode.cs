@@ -6,7 +6,8 @@ public class HexTileNode
 {
     public HexTile tile { get; private set; }
     public List<HexTileNode> adjacentTiles { get; set; }
-    bool isTraversable = true;
+    public bool isTraversable = true;
+    bool isVisible = true;
 
     public HexTileNode(HexTile tile)
     {
