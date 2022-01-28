@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,14 +8,15 @@ public class HexTileSet : MonoBehaviour
     //Tile size from the center of the hex to a corner
     public int tileSize;
     public Vector2 tileCenter;
-    private Dictionary<Vector2, HexTile> tileSet = new Dictionary<Vector2, HexTile>();
-
+    private Dictionary<Vector2, HexTileNode> tileSet = new Dictionary<Vector2, HexTileNode>();
+    private HexTileGraph tileGraph;
 
 
     // Start is called before the first frame update
     void Start()
     {
         CreateTileSet();
+        tileGraph = new HexTileGraph(tileSet);
     }
 
     // Update is called once per frame
@@ -31,7 +31,6 @@ public class HexTileSet : MonoBehaviour
         baseTile.CreatePointyToppedHex();
 
         float tileHeight = baseTile.height;
-        Debug.Log(baseTile.height);
         float tileWidth = baseTile.width;
 
         int maxRows = (int)((mapHeight * 4 / 3) / tileHeight);
@@ -44,6 +43,11 @@ public class HexTileSet : MonoBehaviour
                 AddNewTile(tileWidth, i, tileHeight, j);
             }
         }
+
+        foreach (HexTileNode node in tileSet.Values)
+        {
+            node.FillAdjacentHexes(GetAdjacentTiles(node.tile.pos));
+        }
     }
 
     private void AddNewTile(float tileWidth, int i, float tileHeight, int j)
@@ -52,7 +56,12 @@ public class HexTileSet : MonoBehaviour
         float hexPosX = (i + 1) * tileWidth - offsetX;
         float hexPosY = tileSize + j * (tileHeight * 3 / 4);
         Vector2 center = new Vector2(hexPosX, hexPosY);
-        tileSet.Add(new Vector2(i * 2, j), new HexTile(center, tileSize));
+
+        HexTile tile = new HexTile(center, tileSize);
+        Vector2 pos = new Vector2((i * 2) + j % 2, j);
+        tile.pos = pos;
+
+        tileSet.Add(pos, new HexTileNode(tile));
 
         CreateNewTileObject(hexPosX, hexPosY);
     }
@@ -64,4 +73,36 @@ public class HexTileSet : MonoBehaviour
         gameObject.transform.localPosition = new Vector3((x - mapHeight / 2), 0, (z - mapWidth / 2));
     }
 
+
+    public List<HexTileNode> GetAdjacentTiles(Vector2 pos)
+    {
+        List<HexTileNode> adjacentTiles = new List<HexTileNode>();
+
+        List<Vector2> hexAdjacents = GetHexAdjacents(pos);
+
+        foreach (Vector2 adj in hexAdjacents)
+        {
+            HexTileNode tile;
+            if (tileSet.TryGetValue(adj, out tile))
+            {
+                adjacentTiles.Add(tile);
+            }
+        }
+
+        return adjacentTiles;
+    }
+
+    public List<Vector2> GetHexAdjacents(Vector2 pos)
+    {
+        List<Vector2> adjacents = new List<Vector2>();
+
+        adjacents.Add(new Vector2(pos.x + 1, pos.y + 1));
+        adjacents.Add(new Vector2(pos.x - 1, pos.y + 1));
+        adjacents.Add(new Vector2(pos.x + 1, pos.y - 1));
+        adjacents.Add(new Vector2(pos.x - 1, pos.y - 1));
+        adjacents.Add(new Vector2(pos.x + 2, pos.y));
+        adjacents.Add(new Vector2(pos.x - 2, pos.y));
+
+        return adjacents;
+    }
 }

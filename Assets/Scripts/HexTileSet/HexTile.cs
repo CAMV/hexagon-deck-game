@@ -5,6 +5,7 @@ using UnityEngine;
 public class HexTile
 {
     public Vector2 center;
+    public Vector2 pos;
     public float size;
     public float width { get; private set; }
     public float height { get; private set; }
