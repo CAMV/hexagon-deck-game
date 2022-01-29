@@ -29,7 +29,6 @@ public class PlayerDeckManager : MonoBehaviour
         return true;
     }
 
-
     public void ResetDeck()
     {
         for (int i = 0; i < _graveyard.Count; i++)
