@@ -8,7 +8,7 @@ public class HexTileNode
     public List<HexTileNode> adjacentTiles { get; set; }
     public bool isTraversable = true;
     bool isVisible = true;
-    public int traverseCost {get; private set;}
+    public int traverseCost { get; private set; }
 
     public HexTileNode(HexTile tile)
     {
@@ -26,5 +26,13 @@ public class HexTileNode
         }
 
         this.adjacentTiles = adjacentTiles;
+    }
+
+    public void TriggerNodeClick()
+    {
+        if (this.tile != null)
+        {
+            Locator.GetHexTileManager().TriggerNodeClick(this.tile.pos);
+        }
     }
 }

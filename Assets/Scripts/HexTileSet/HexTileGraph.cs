@@ -171,7 +171,7 @@ public class HexTileGraph
         return shortestPath;
     }
 
-    public List<Vector2> CreatePath(Dictionary<Vector2, Vector2> cameFrom, Vector2 endPos)
+    private List<Vector2> CreatePath(Dictionary<Vector2, Vector2> cameFrom, Vector2 endPos)
     {
         List<Vector2> path = new List<Vector2>();
         Vector2 currentPos = endPos;
@@ -183,6 +183,7 @@ public class HexTileGraph
             currentPos = cameFrom[currentPos];
         }
 
+        path.Reverse();
         return path;
     }
 }
