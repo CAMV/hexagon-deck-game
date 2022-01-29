@@ -63,13 +63,10 @@ public class HexTileManager : MonoBehaviour
         Vector2 pos = new Vector2((i * 2) + j % 2, j);
         tile.pos = pos;
 
-        HexTileNode newNode = new HexTileNode(tile);
-        tileSet.Add(pos, newNode);
-
-        SetTileObject(hexPosX, hexPosY, newNode);
+        SetTileObject(hexPosX, hexPosY, tile);
     }
 
-    private void SetTileObject(float x, float z, HexTileNode node)
+    private void SetTileObject(float x, float z, HexTile tile)
     {
         GameObject gameObject = new GameObject();
         gameObject.transform.parent = transform;
@@ -78,14 +75,13 @@ public class HexTileManager : MonoBehaviour
         Vector3 hexGamePosition = gameObject.transform.position;
         LayerMask layerMask = LayerMask.GetMask("Terrain");
         RaycastHit cubeHit;
-        Debug.DrawLine(hexGamePosition + new Vector3(0, 4, 0), hexGamePosition + new Vector3(0, -4, 0), Color.red, 1000);
         if (Physics.Raycast(hexGamePosition + new Vector3(0, 4, 0), Vector3.down, out cubeHit, layerMask))
         {
-            Debug.Log(hexGamePosition);
-            Debug.Log("found a hex! " + cubeHit.collider.transform.position);
-            cubeHit.collider.transform.gameObject.AddComponent<HexComponent>();
-            HexComponent hexComponent = cubeHit.collider.transform.gameObject.GetComponent<HexComponent>();
-            hexComponent.HexTileNode = node;
+            cubeHit.collider.transform.gameObject.AddComponent<HexTileNode>();
+            HexTileNode hexTileNode = cubeHit.collider.transform.gameObject.GetComponent<HexTileNode>();
+            hexTileNode.Initialize(tile);
+
+            tileSet.Add(tile.pos, hexTileNode);
         }
 
         Destroy(gameObject);
@@ -126,6 +122,7 @@ public class HexTileManager : MonoBehaviour
 
     public void TriggerNodeClick(Vector2 pos)
     {
+        Debug.Log("Building rout to " + pos);
         PlayerController player = Locator.GetPlayerController();
 
         if (player.IsSelected)
