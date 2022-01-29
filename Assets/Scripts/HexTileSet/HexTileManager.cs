@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HexTileSet : MonoBehaviour
+public class HexTileManager : MonoBehaviour
 {
     public int mapHeight;
     public int mapWidth;
@@ -11,18 +11,16 @@ public class HexTileSet : MonoBehaviour
     private Dictionary<Vector2, HexTileNode> tileSet = new Dictionary<Vector2, HexTileNode>();
     private HexTileGraph tileGraph;
 
-
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        Locator.ProvideHexTileManager(this);
         CreateTileSet();
         tileGraph = new HexTileGraph(tileSet);
     }
 
-    // Update is called once per frame
-    void Update()
+    // Start is called before the first frame update
+    void Start()
     {
-
     }
 
     private void CreateTileSet()

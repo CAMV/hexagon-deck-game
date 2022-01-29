@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HexTileNode
+public class HexTileNode : MonoBehaviour
 {
     public HexTile tile { get; private set; }
     public List<HexTileNode> adjacentTiles { get; set; }
