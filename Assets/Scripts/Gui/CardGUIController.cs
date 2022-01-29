@@ -19,6 +19,11 @@ namespace gui
 
         private Card _card;
 
+        public void TESTicles(string s)
+        {
+            Debug.Log(s);
+        }
+
 
         // Start is called before the first frame update
         void Awake()

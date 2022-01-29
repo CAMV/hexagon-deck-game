@@ -16,6 +16,16 @@ namespace gui
 
         private bool _isMouseOnRegion = false;
 
+        private bool _isTop = true;
+        private Vector3 _topPoint, _bottomPoint;
+
+        private void Awake()
+        {
+            var _rectTransform = GetComponent<RectTransform>();
+            _topPoint = _rectTransform.localPosition + (Vector3.up * _rectTransform.sizeDelta.y / 2) + (Vector3.left * _rectTransform.sizeDelta.x / 2);
+            _bottomPoint = _rectTransform.localPosition + (Vector3.down * _rectTransform.sizeDelta.y / 2) + (Vector3.right * _rectTransform.sizeDelta.x / 2);
+        }
+
         void OnMouseEnter()
         {
             _isMouseOnRegion = true;
@@ -24,12 +34,10 @@ namespace gui
                 MouseEnteredRegion();
         }
 
-        void OnMouseClick()
+        private void OnMouseOver()
         {
-            _isMouseOnRegion = true;
-
-            if (MouseEnteredRegion != null)
-                MouseEnteredRegion();
+            Debug.Log(_topPoint);
+            Debug.Log(_bottomPoint);
         }
 
         void OnMouseExit()
