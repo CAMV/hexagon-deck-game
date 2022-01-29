@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HexTileNode
+public class HexTileNode : MonoBehaviour
 {
     public HexTile tile { get; private set; }
     public List<HexTileNode> adjacentTiles { get; set; }
@@ -14,6 +14,11 @@ public class HexTileNode
     {
         this.tile = tile;
         traverseCost = 1;
+    }
+
+    public void Initialize(HexTile tile) 
+    {
+        this.tile = tile;
     }
 
 
@@ -30,6 +35,7 @@ public class HexTileNode
 
     public void TriggerNodeClick()
     {
+        Debug.Log(this.tile);
         if (this.tile != null)
         {
             Locator.GetHexTileManager().TriggerNodeClick(this.tile.pos);
