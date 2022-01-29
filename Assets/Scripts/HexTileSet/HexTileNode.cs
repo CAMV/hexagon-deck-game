@@ -8,10 +8,12 @@ public class HexTileNode
     public List<HexTileNode> adjacentTiles { get; set; }
     public bool isTraversable = true;
     bool isVisible = true;
+    public int traverseCost {get; private set;}
 
     public HexTileNode(HexTile tile)
     {
         this.tile = tile;
+        traverseCost = 1;
     }
 
 
