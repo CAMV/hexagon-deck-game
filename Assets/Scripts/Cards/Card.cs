@@ -2,55 +2,21 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(fileName ="Card", menuName = "Card Game")]
+[CreateAssetMenu(fileName ="Card", menuName = "Card Game/Card")]
 public class Card : ScriptableObject
 {
+    [SerializeField]
+    private CardEffect _frontEffect;
 
     [SerializeField]
-    private string _name;
+    private CardEffect _backEffect;
 
-    [SerializeField]
-    private string _description;
-
-    [SerializeField]
-    private Sprite _image;
-
-    [SerializeField]
-    private UnityEvent _actions;
-
-    public string Name
+    public CardEffect FrontEffect
     {
-        get
-        {
-            return _name;
-        }
+        get => _frontEffect;
     }
-    
-    public string Description
+    public CardEffect BackEffect
     {
-        get
-        {
-            return _description;
-        }
-    }
-
-    public Sprite Image
-    {
-        get
-        {
-            return _image;
-        }
-    }
-
-    protected virtual bool CheckCondition()
-    {
-        return true;
-    }
-
-    protected virtual void ExecuteAction()
-    {
-        if (!CheckCondition())
-            return;
-
+        get => _backEffect;
     }
 }
