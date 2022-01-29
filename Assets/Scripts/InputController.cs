@@ -30,6 +30,7 @@ public class InputController : MonoBehaviour
         HexTileNode node = transform.GetComponent<HexTileNode>();
 
         if (node != null) {
+            node.TriggerNodeClick();
             Debug.Log("node in pos " + node.tile.pos);
         }
 

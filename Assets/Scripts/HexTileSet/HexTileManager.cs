@@ -7,7 +7,6 @@ public class HexTileManager : MonoBehaviour
     public int mapWidth;
     //Tile size from the center of the hex to a corner
     public int tileSize;
-    public Vector2 tileCenter;
     private Dictionary<Vector2, HexTileNode> tileSet = new Dictionary<Vector2, HexTileNode>();
     private HexTileGraph tileGraph;
 
@@ -21,6 +20,11 @@ public class HexTileManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    }
+
+    public HexTileNode GetNode(Vector2 pos) 
+    {
+        return tileSet[pos];
     }
 
     private void CreateTileSet()
@@ -59,16 +63,32 @@ public class HexTileManager : MonoBehaviour
         Vector2 pos = new Vector2((i * 2) + j % 2, j);
         tile.pos = pos;
 
-        tileSet.Add(pos, new HexTileNode(tile));
+        HexTileNode newNode = new HexTileNode(tile);
+        tileSet.Add(pos, newNode);
 
-        CreateNewTileObject(hexPosX, hexPosY);
+        SetTileObject(hexPosX, hexPosY, newNode);
     }
 
-    private void CreateNewTileObject(float x, float z)
+    private void SetTileObject(float x, float z, HexTileNode node)
     {
         GameObject gameObject = new GameObject();
         gameObject.transform.parent = transform;
         gameObject.transform.localPosition = new Vector3((x - mapHeight / 2), 0, (z - mapWidth / 2));
+
+        Vector3 hexGamePosition = gameObject.transform.position;
+        LayerMask layerMask = LayerMask.GetMask("Terrain");
+        RaycastHit cubeHit;
+        Debug.DrawLine(hexGamePosition + new Vector3(0, 4, 0), hexGamePosition + new Vector3(0, -4, 0), Color.red, 1000);
+        if (Physics.Raycast(hexGamePosition + new Vector3(0, 4, 0), Vector3.down, out cubeHit, layerMask))
+        {
+            Debug.Log(hexGamePosition);
+            Debug.Log("found a hex! " + cubeHit.collider.transform.position);
+            cubeHit.collider.transform.gameObject.AddComponent<HexComponent>();
+            HexComponent hexComponent = cubeHit.collider.transform.gameObject.GetComponent<HexComponent>();
+            hexComponent.HexTileNode = node;
+        }
+
+        Destroy(gameObject);
     }
 
 
@@ -102,5 +122,18 @@ public class HexTileManager : MonoBehaviour
         adjacents.Add(new Vector2(pos.x - 2, pos.y));
 
         return adjacents;
+    }
+
+    public void TriggerNodeClick(Vector2 pos)
+    {
+        PlayerController player = Locator.GetPlayerController();
+
+        if (player.IsSelected)
+        {
+            List<Vector2> walkPath = tileGraph.GetShortestPath(player.StandingNode, tileSet[pos]);
+            if (walkPath.Count > 1) {
+                player.Move(walkPath);
+            }
+        }
     }
 }

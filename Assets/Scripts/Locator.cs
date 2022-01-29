@@ -15,4 +15,10 @@ public static class Locator
     public static HexTileManager GetHexTileManager() => _hexTileManager;
 
     public static void ProvideHexTileManager(HexTileManager htm) => _hexTileManager = htm;
+
+    private static PlayerController _playerController = null;
+
+    public static PlayerController GetPlayerController() => _playerController;
+
+    public static void ProvidePlayerController(PlayerController pc) => _playerController = pc;
 }
