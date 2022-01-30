@@ -75,7 +75,7 @@ public class HexTileManager : MonoBehaviour
         Vector3 hexGamePosition = gameObject.transform.position;
         LayerMask layerMask = LayerMask.GetMask("Terrain");
         RaycastHit cubeHit;
-        if (Physics.Raycast(hexGamePosition + new Vector3(0, 4, 0), Vector3.down, out cubeHit, layerMask))
+        if (Physics.Raycast(hexGamePosition + new Vector3(0, -4, 0), Vector3.up, out cubeHit, 5, layerMask))
         {
             cubeHit.collider.transform.gameObject.AddComponent<HexTileNode>();
             HexTileNode hexTileNode = cubeHit.collider.transform.gameObject.GetComponent<HexTileNode>();
@@ -122,7 +122,6 @@ public class HexTileManager : MonoBehaviour
 
     public void TriggerNodeClick(Vector2 pos)
     {
-        Debug.Log("Building rout to " + pos);
         PlayerController player = Locator.GetPlayerController();
 
         if (player.IsSelected)
