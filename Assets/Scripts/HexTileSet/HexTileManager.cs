@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -48,8 +49,24 @@ public class HexTileManager : MonoBehaviour
 
         foreach (HexTileNode node in tileSet.Values)
         {
-            node.FillAdjacentHexes(GetAdjacentTiles(node.tile.pos));
+            UpdateAdjacents(node);
         }
+    }
+
+    internal void ToggleUnpassableNode(HexTileNode node)
+    {
+        node.isTraversable = false;
+
+        foreach(HexTileNode adj in GetAdjacentTiles(node.tile.pos))
+        {
+            UpdateAdjacents(adj);
+        }
+    }
+
+    public void UpdateAdjacents(HexTileNode node)
+    {
+        List<HexTileNode> adjacents = GetAdjacentTiles(node.tile.pos);
+        node.FillAdjacentHexes(adjacents);
     }
 
     private void AddNewTile(float tileWidth, int i, float tileHeight, int j)
