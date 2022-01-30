@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
     void Start() 
     {
-        SetCurrentNode();
+        SetCurrentNode(this.transform.parent.GetComponent<HexTileNode>());
     }
 
     public void Move(List<Vector2> path) {
@@ -38,18 +38,17 @@ public class PlayerController : MonoBehaviour
         Vector2 newNodePos = path[path.Count - 1];
         HexTileNode newNode = tileManager.GetNode(path[path.Count - 1]);
         Debug.Log("moving player to " + newNode.tile.center);
-        transform.parent = newNode.transform;
-        transform.position = newNode.transform.position + ELEVATION;
-        _standingNode = newNode;
     }
 
 
-    private void SetCurrentNode() 
+    private void SetCurrentNode(HexTileNode node) 
     {
-        HexTileNode node = this.transform.parent.GetComponent<HexTileNode>();
+        Locator.GetHexTileManager().ToggleUnpassableNode(_standingNode);
+
+        transform.parent = node.transform;
+        transform.position = node.transform.position + ELEVATION;
         _standingNode = node;
 
-        transform.position = node.transform.position;
-
+        Locator.GetHexTileManager().ToggleUnpassableNode(node);
     }
 }
