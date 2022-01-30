@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class UnitController : MonoBehaviour
 {
     private static Vector3 ELEVATION = new Vector3(0, 0.35f, 0);
-
-    private bool _isSelected = true;
     private HexTileNode _standingNode;
 
     public HexTileNode StandingNode 
@@ -15,21 +13,18 @@ public class PlayerController : MonoBehaviour
         // set => _standingNode = value;
     }
 
-    public bool IsSelected 
+    private void Awake()
     {
-        get => _isSelected;
+        TurnController.SubscribeUnit(this);
     }
-
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-        Locator.ProvidePlayerController(this);
-    }
-
-    void Start() 
-    {
-        SetCurrentNode(this.transform.parent.GetComponent<HexTileNode>());
+        Debug.Log("STORT");
+        HexTileNode node = this.transform.parent.GetComponent<HexTileNode>();
+        node.IsOccupied = true;
+        this._standingNode = node;
     }
 
     public void Move(List<Vector2> path) {
@@ -38,17 +33,18 @@ public class PlayerController : MonoBehaviour
         Vector2 newNodePos = path[path.Count - 1];
         HexTileNode newNode = tileManager.GetNode(path[path.Count - 1]);
         Debug.Log("moving player to " + newNode.tile.center);
+        MoveToNode(newNode);
     }
 
 
-    private void SetCurrentNode(HexTileNode node) 
+    private void MoveToNode(HexTileNode node) 
     {
-        Locator.GetHexTileManager().ToggleUnpassableNode(_standingNode);
+        _standingNode.ToggleOccupied();
 
         transform.parent = node.transform;
         transform.position = node.transform.position + ELEVATION;
         _standingNode = node;
 
-        Locator.GetHexTileManager().ToggleUnpassableNode(node);
+        node.ToggleOccupied();
     }
 }

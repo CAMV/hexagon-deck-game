@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,11 +7,18 @@ public class HexTileNode : MonoBehaviour
 {
     public HexTile tile { get; private set; }
     public List<HexTileNode> adjacentTiles { get; set; }
-    public bool isTraversable = true;
+    public bool isTraversable = true;   //Used when the node will never be passable(walls, trees, static blocking props, etc)
+    private bool _isOccupied = true;    //Used when occupied by unpassable transient entities (units, AoEs, etc)
     bool isVisible = true;
     private int _traverseCost;
     [SerializeField]
     Vector2 displayNode;
+
+    public bool IsOccupied
+    {
+        get => _isOccupied;
+        set => _isOccupied = value;
+    }
 
     public int TraverseCost
     {
@@ -45,6 +53,11 @@ public class HexTileNode : MonoBehaviour
         this.adjacentTiles = adjacentTiles;
     }
 
+    public void ToggleOccupied()
+    {
+        _isOccupied = !IsOccupied;
+    }
+
     public void TriggerNodeClick()
     {
         Debug.Log(this.tile);
@@ -52,5 +65,20 @@ public class HexTileNode : MonoBehaviour
         {
             Locator.GetHexTileManager().TriggerNodeClick(this.tile.pos);
         }
+    }
+
+    internal void RemoveAdjacent(HexTileNode node)
+    {
+        List<HexTileNode> neighbors = new List<HexTileNode>();
+
+        foreach (var neighbor in adjacentTiles)
+        {
+            if (neighbor != node)
+            {
+                neighbors.Add(neighbor);
+            }
+        }
+
+        adjacentTiles = neighbors;
     }
 }

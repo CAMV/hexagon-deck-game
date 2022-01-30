@@ -146,6 +146,8 @@ public class HexTileGraph
 
             foreach (HexTileNode neighbor in current.adjacentTiles)
             {
+                if (neighbor.IsOccupied) continue;
+
                 Vector2 neighborPos = neighbor.tile.pos;
                 int newCost = costSoFar[currentPos] + neighbor.TraverseCost;
                 if (!costSoFar.ContainsKey(neighborPos))
