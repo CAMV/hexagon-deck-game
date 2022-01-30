@@ -8,17 +8,29 @@ public class HexTileNode : MonoBehaviour
     public List<HexTileNode> adjacentTiles { get; set; }
     public bool isTraversable = true;
     bool isVisible = true;
-    public int traverseCost { get; private set; }
+    private int _traverseCost;
+    [SerializeField]
+    Vector2 displayNode;
+
+    public int TraverseCost
+    {
+        get => _traverseCost;
+    }
+
 
     public HexTileNode(HexTile tile)
     {
         this.tile = tile;
-        traverseCost = 1;
+        _traverseCost = 1;
     }
 
     public void Initialize(HexTile tile) 
     {
         this.tile = tile;
+        this.isTraversable = true;
+        this.isVisible = true;
+        displayNode = tile.pos;
+        _traverseCost = 1;
     }
 
 

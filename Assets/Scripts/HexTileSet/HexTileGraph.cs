@@ -147,7 +147,7 @@ public class HexTileGraph
             foreach (HexTileNode neighbor in current.adjacentTiles)
             {
                 Vector2 neighborPos = neighbor.tile.pos;
-                int newCost = costSoFar[currentPos] + neighbor.traverseCost;
+                int newCost = costSoFar[currentPos] + neighbor.TraverseCost;
                 if (!costSoFar.ContainsKey(neighborPos))
                 {
                     costSoFar.Add(neighborPos, newCost);
@@ -175,13 +175,13 @@ public class HexTileGraph
     {
         List<Vector2> path = new List<Vector2>();
         Vector2 currentPos = endPos;
-        path.Add(endPos);
 
         while (cameFrom[currentPos] != currentPos)
         {
             path.Add(currentPos);
             currentPos = cameFrom[currentPos];
         }
+        path.Add(currentPos);
 
         path.Reverse();
         return path;

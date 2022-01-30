@@ -12,11 +12,11 @@ TagManager:
   - Water
   - UI
   - Terrain
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemies
+  - Walls
+  - Obstacles
+  - Passables
   - 
   - 
   - 

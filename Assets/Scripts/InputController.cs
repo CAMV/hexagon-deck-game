@@ -15,7 +15,7 @@ public class InputController : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) {
-            Ray cubeRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray cubeRay = Locator.GetTextureCamera().camera.ScreenPointToRay(Input.mousePosition);
             LayerMask layerMask = LayerMask.GetMask("Terrain");
             RaycastHit cubeHit;
             if (Physics.Raycast(cubeRay, out cubeHit, layerMask))

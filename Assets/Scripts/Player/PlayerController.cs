@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
         Vector2 newNodePos = path[path.Count - 1];
         HexTileNode newNode = tileManager.GetNode(path[path.Count - 1]);
         Debug.Log("moving player to " + newNode.tile.center);
-        transform.position = newNode.tile.center;
+        transform.parent = newNode.transform;
+        transform.position = newNode.transform.position + ELEVATION;
+        _standingNode = newNode;
     }
 
 
@@ -47,7 +49,7 @@ public class PlayerController : MonoBehaviour
         HexTileNode node = this.transform.parent.GetComponent<HexTileNode>();
         _standingNode = node;
 
-        transform.position = node.transform.parent.position;
+        transform.position = node.transform.position;
 
     }
 }
