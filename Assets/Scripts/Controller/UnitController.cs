@@ -13,7 +13,7 @@ public class UnitController : MonoBehaviour
         // set => _standingNode = value;
     }
 
-    private void Awake()
+    protected void Awake()
     {
         TurnController.SubscribeUnit(this);
     }
@@ -21,7 +21,6 @@ public class UnitController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("STORT");
         HexTileNode node = this.transform.parent.GetComponent<HexTileNode>();
         node.IsOccupied = true;
         this._standingNode = node;
@@ -46,5 +45,10 @@ public class UnitController : MonoBehaviour
         _standingNode = node;
 
         node.ToggleOccupied();
+    }
+
+    public void EndTurn()
+    {
+        Locator.GetGameCycleManager().EndTurn();
     }
 }

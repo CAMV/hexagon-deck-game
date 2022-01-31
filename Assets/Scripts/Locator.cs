@@ -14,6 +14,7 @@ public static class Locator
     private static PlayerController _playerController = null;
     private static TextureCameraComponent _textureCamera = null;
     private static EnemyHandler _enemyHandler = null;
+    private static GameCycleManager _gameCycle = null;
 
     public static HexTileManager GetHexTileManager() => _hexTileManager;
 
@@ -30,4 +31,8 @@ public static class Locator
     public static EnemyHandler GetEnemyHandler() => _enemyHandler;
 
     public static void ProvideEnemyHandler(EnemyHandler eh) => _enemyHandler = eh;
+
+    public static GameCycleManager GetGameCycleManager() => _gameCycle;
+
+    public static void ProvideGameCycleManager(GameCycleManager gc) => _gameCycle = gc;
 }

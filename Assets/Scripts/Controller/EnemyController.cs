@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : UnitController
 {
-    private bool _isSelected = true;
+    private bool _isSelected = false;
     private Enemy _enemy;
     
     public Enemy Enemy
@@ -22,6 +22,7 @@ public class EnemyController : UnitController
     
     void Awake()
     {
+        base.Awake();
         Locator.GetEnemyHandler().AddEnemy(this);
     }
     
