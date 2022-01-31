@@ -13,6 +13,7 @@ public static class Locator
     private static HexTileManager _hexTileManager = null;
     private static PlayerController _playerController = null;
     private static TextureCameraComponent _textureCamera = null;
+    private static EnemyHandler _enemyHandler = null;
 
     public static HexTileManager GetHexTileManager() => _hexTileManager;
 
@@ -25,4 +26,8 @@ public static class Locator
     public static TextureCameraComponent GetTextureCamera() => _textureCamera;
 
     public static void ProvideTextureCamera(TextureCameraComponent pc) => _textureCamera = pc;
+
+    public static EnemyHandler GetEnemyHandler() => _enemyHandler;
+
+    public static void ProvideEnemyHandler(EnemyHandler eh) => _enemyHandler = eh;
 }

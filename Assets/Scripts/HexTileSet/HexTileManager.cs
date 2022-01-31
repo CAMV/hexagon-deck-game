@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HexTileManager : MonoBehaviour
 {
+    private static Vector3 RAYCAST_ELEVATION = new Vector3(0, 4, 0);
+    private static int RAYCAST_DISTANCE = 10;
     public int mapHeight;
     public int mapWidth;
     //Tile size from the center of the hex to a corner
@@ -23,7 +25,7 @@ public class HexTileManager : MonoBehaviour
     {
     }
 
-    public HexTileNode GetNode(Vector2 pos) 
+    public HexTileNode GetNode(Vector2 pos)
     {
         return tileSet[pos];
     }
@@ -51,11 +53,66 @@ public class HexTileManager : MonoBehaviour
         {
             UpdateAdjacents(node);
         }
+
+        foreach (HexTileNode node in tileSet.Values)
+        {
+            CheckWalls(node);
+        }
+
     }
 
-    internal void ToggleUnpassableNode(HexTileNode node)
+
+    public void CheckWalls(HexTileNode node) 
     {
-        node.isTraversable = false;
+        Vector3 nodePos = node.transform.position + RAYCAST_ELEVATION;;
+        //Vector3 nodePos = new Vector3(nodePos.x, 0, nodePos.z) 
+        //Debug.DrawLine(nodePos, nodePos - RAYCAST_ELEVATION * 2, Color.magenta, 10);
+
+        LayerMask wallLayer = LayerMask.GetMask("Walls");
+        RaycastHit rayHit;
+        if (Physics.Raycast(nodePos, Vector3.down, out rayHit, RAYCAST_DISTANCE, wallLayer))
+        {
+            node.isTraversable = false;
+            UpdateAdjacents(node);
+        } else
+        {
+            float d = 0.15f;
+            AttemptMovedWallHit(node, nodePos, d, 1, 1);
+            AttemptMovedWallHit(node, nodePos, d, -1, 1);
+            AttemptMovedWallHit(node, nodePos, d, 1, -1);
+            AttemptMovedWallHit(node, nodePos, d, -1, -1);
+            AttemptMovedWallHit(node, nodePos, d, 2, 0);
+            AttemptMovedWallHit(node, nodePos, d, -2, 0);
+        }
+
+    }
+
+    private void AttemptMovedWallHit(HexTileNode node, Vector3 nodePos, float d, int v1, int v2)
+    {
+        LayerMask wallLayer = LayerMask.GetMask("Walls");
+        RaycastHit rayHit;
+        Vector3 deltaNodePos = new Vector3(nodePos.x + v1*d, nodePos.y, nodePos.z + v2*d);
+        //Debug.DrawLine(deltaNodePos, deltaNodePos - RAYCAST_ELEVATION * 2, Color.red, 10);
+        if (Physics.Raycast(deltaNodePos, Vector3.down, out rayHit, RAYCAST_DISTANCE, wallLayer))
+        {
+            Debug.Log("hit a wall with offset " + v1 + ", " + v2);
+            UnpassableNeighbor(node, new Vector2(v1, v2));
+        }
+    }
+
+    private void UnpassableNeighbor(HexTileNode node, Vector2 offset)
+    {
+        Vector2 neighborPos = node.tile.pos + offset;
+        HexTileNode neighbor;
+        if (tileSet.TryGetValue(neighborPos, out neighbor))
+        {
+            neighbor.RemoveAdjacent(node);
+        }
+    }
+
+    public void ToggleUnpassableNode(HexTileNode node)
+    {
+        node.isTraversable = !node.isTraversable;
 
         foreach(HexTileNode adj in GetAdjacentTiles(node.tile.pos))
         {
@@ -88,15 +145,20 @@ public class HexTileManager : MonoBehaviour
         GameObject gameObject = new GameObject();
         gameObject.transform.parent = transform;
         gameObject.transform.localPosition = new Vector3((x - mapHeight / 2), 0, (z - mapWidth / 2));
+        //gameObject.AddComponent<HexTileNode>();
+        //gameObject.GetComponent<HexTileNode>().Initialize(tile);
+
 
         Vector3 hexGamePosition = gameObject.transform.position;
         LayerMask layerMask = LayerMask.GetMask("Terrain");
         RaycastHit cubeHit;
-        if (Physics.Raycast(hexGamePosition + new Vector3(0, -4, 0), Vector3.up, out cubeHit, 5, layerMask))
+        //Debug.DrawLine(hexGamePosition + new Vector3(0, 4, 0), hexGamePosition + new Vector3(0,-4,0), Color.red, 1000);
+        if (Physics.Raycast(hexGamePosition + RAYCAST_ELEVATION, Vector3.down, out cubeHit, RAYCAST_DISTANCE, layerMask))
         {
             cubeHit.collider.transform.gameObject.AddComponent<HexTileNode>();
             HexTileNode hexTileNode = cubeHit.collider.transform.gameObject.GetComponent<HexTileNode>();
             hexTileNode.Initialize(tile);
+
 
             tileSet.Add(tile.pos, hexTileNode);
         }
@@ -116,7 +178,10 @@ public class HexTileManager : MonoBehaviour
             HexTileNode tile;
             if (tileSet.TryGetValue(adj, out tile))
             {
-                adjacentTiles.Add(tile);
+                if (tile.isTraversable)
+                {
+                    adjacentTiles.Add(tile);
+                }
             }
         }
 
